@@ -1,6 +1,6 @@
 galaxy_info:
   author: Jorge Calavia
-  description: Template role for AWS EC2 molecule testing
+  description: Install and configure Git client
   company: JCalavia Org
 
   license: GPL-3.0-or-later

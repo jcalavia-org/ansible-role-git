@@ -1,9 +1,13 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/jcalavia-org/molecule-ec2-template)
-[![Build Status](https://travis-ci.com/jcalavia-org/molecule-ec2-template.svg?branch=master)](https://travis-ci.com/jcalavia-org/molecule-ec2-template)
-# molecule-ec2-template
-Sample repository for ec2 ansible role testing with molecule
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/jcalavia-org/ansible-role-git)
+[![Build Status](https://travis-ci.com/jcalavia-org/ansible-role-git.svg?branch=master)](https://travis-ci.com/jcalavia-org/ansible-role-git)
+# Ansible Role Git
 
-# Setup environment
+Ansible role to manage instalaltion and congiuration of git client
+
+See [Git documentation](https://git.kernel.org/pub/scm/git/git.git/plain/Documentation/config)
+More [More config](https://git-scm.com/docs/git-config#_variables)
+
+# Setup development environment
 
 The following environment variables must be defined
 
@@ -13,10 +17,6 @@ The following environment variables must be defined
 * AWS_ACCESS_KEY_ID
 * AWS_SECRET_ACCESS_KEY
 
-run the following command
-```shell
-./setup.sh
-```
 
 ## Gitpod
 

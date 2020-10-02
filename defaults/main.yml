@@ -1,2 +1,6 @@
 ---
-# defaults file for molecule-ec2-template
+# defaults file for ansible-role-git
+
+git_author_email:
+git_author_name:
+git_singning_key:

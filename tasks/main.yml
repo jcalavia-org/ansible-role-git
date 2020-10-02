@@ -1,5 +1,5 @@
 ---
-# tasks file for molecule-ec2-template
+# tasks file for ansible-role-git
 - name: NOP Task
   debug:
     msg: Testing roles

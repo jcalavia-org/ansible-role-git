@@ -1,0 +1,56 @@
+[alias]
+    # Update last commit with staged files without editing the commit message.
+    add-stage-to-commit = commit --amend --no-edit
+
+    # Change last commit message
+    chg-msg = commit --amend
+
+    # Pretty format log output
+	log-graph = log --graph --date=relative --pretty='tformat:%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+	log-history = log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --stat
+
+    # List local commits that were not pushed to remote repository
+    review-local = "!git lg @{push}.."
+
+    # Undo last commit but keep changed files in stage
+    uncommit = reset --soft HEAD~1
+
+[color]
+	ui = auto
+
+[core]
+	editor = vim
+    excludesfile = ~/.gitignore
+	pager = none
+    whitespace = -trailing-space
+
+[commit]
+	cleanup = scissors
+	gpgsign = true
+
+[diff]
+	tool = vimdiff
+
+[difftool]
+	prompt = false
+
+[gpg]
+	program = gpg
+
+[log]
+  abbrevCommit = true
+  follow = true
+
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+    ff = only
+
+[status]
+	showUntrackedFiles = all
+
+[user]
+	email = {{ git_user.email }}
+	name = {{ git_user.name }}
+	signingkey = {{ git_user.signingkey }}
+
